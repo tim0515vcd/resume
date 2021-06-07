@@ -1,0 +1,234 @@
+html{
+  /*設定網頁背景色*/
+  background-color: #444444	;
+  font-family: Microsoft JhengHei;
+}
+#Header{
+　width:360px;
+　height:80px;
+　text-align:center;
+　line-height:80px;
+　font-size:15px;
+　color:#fffaf3;
+　font-weight:bold;
+　background-color:#f9c81e;
+}
+#body{
+　width:360px;
+　height:280px;
+　text-align:center;
+　line-height:280px;
+　font-size:15px;
+　color:#f9c81e;
+　font-weight:bold;
+　background-color:#fffaf3;
+}
+#Footer{
+　width:360px;
+　height:80px;
+　text-align:center;
+　line-height:80px;
+　font-size:15px;
+　color:#fffaf3;
+　font-weight:bold;
+　background-color:#f9c81e;
+}
+#wapper{
+    margin: -1.5rem 0;
+    background-color: #343a40;
+}
+
+
+h1.h1{
+  font-size:3em;
+  text-align: center;
+}
+
+h2{
+  font-size:2em;
+  text-align: center;
+}
+p{
+  font-size:16px;
+  text-align: center;
+}
+.back_ground{
+	background-color:#AAAAAA; 
+	height:600px; 
+	width: 1400px; 
+	position: absolute;
+  top: 50% ;
+  left: 50% ;
+  margin:-300px 0 0 -700px ;
+  border-radius: 20px 20px 20px 20px;
+  border:3px #666666 solid;
+}
+.movie{
+  background-color:#AAAAAA; 
+  height:350px; 
+  width: 750px; 
+  position: absolute;
+  left:  66.3% ;
+  bottom: 37.5% ;
+  margin:-150px 0 0 -350px ;
+  border-radius: 20px 20px 20px 20px;
+  border:3px #666666 solid;
+}
+.voice{
+  background-color:#AAAAAA; 
+  height:150px; 
+  width: 1300px; 
+  position: absolute;
+  top: 75.5% ;
+  left: 50% ;
+  margin:-75px 0 0 -650px ;
+  border-radius: 20px 20px 20px 20px;
+  border:3px #666666 solid;
+}
+.pb-4{
+    padding-bottom: 1.5rem!important;
+    /*padding-top: 1.5rem!important;*/
+}
+.container{
+    position: relative;
+    min-height: calc(100vh - 56px);
+    background-color: #666666;
+    color: #fff;
+    height: 100%;
+}
+.p-4 {
+    padding: 1.5rem!important;
+    /*margin-right: 2rem!important;
+    margin-left: 2rem!important;*/
+}
+
+.login-position {
+  position: relative;
+  background-color: #666666;
+  color: #fff;
+  width: 350px;
+  height: 350px;
+  margin: 0px auto;
+  margin-top: 125px;
+  box-shadow: 3px 3px 9px black;
+  padding: 15px
+}
+.login-pic-div{
+  position: relative;
+  margin: 0px auto;
+  width:120px;
+  height:120px;
+  background-color: #AAAAAA;
+  border-radius: 99em;
+}
+.login-position-1 {
+  position: relative;
+  background-color: #AAAAAA;
+  color: #fff;
+  width: 300px;
+  height: 180px;
+  margin: 0px auto;
+  margin-top: 10px;
+  border-radius: 10px;
+
+}
+.login-pic{
+  display:block;
+  margin:auto;
+  height: 120px;
+}
+.login-pic-1{
+  margin-right: 5px;
+  height:25px;
+  margin: 15px 5px 15px 15px;
+}
+.login-input{
+  width: 235px;
+  height: 35px;
+  margin: 15px 0px 10px 0px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border:0 none;
+}
+.login-div{
+  border-bottom: solid 1px rgba(255,255,255,0.3);
+}
+.login-btn-div{
+  margin: 10px 10px 10px 10px;
+}
+
+table.table-responsive {
+
+    margin:0px auto;
+    border:8px double;
+    border-collapse: collapse;
+    display: block;
+    text-align:center;
+    margin-left:auto; 
+    margin-right:auto;
+
+    
+}
+@media(min-width: 280px){
+  table.table-responsive {
+      white-space:nowrap;
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+  h1.h1{
+    font-size:2em;
+  }
+}
+@media(min-width: 320px){
+  table.table-responsive {
+      white-space:nowrap;
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
+@media(min-width: 360px){
+  table.table-responsive {
+      white-space:nowrap;
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
+@media(min-width: 375px){
+  table.table-responsive {
+      white-space:nowrap;
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
+
+
+table th.th{
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+table th.td-1{
+    width: 10%; 
+    padding: 20px;
+}
+table th.td-2{
+    width: 15%; 
+    padding: 20px;
+}
+table th.td-3{
+    width: 20%; 
+    padding: 20px;
+}
