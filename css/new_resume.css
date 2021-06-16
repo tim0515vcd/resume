@@ -1,0 +1,17 @@
+
+.icon-set
+{
+	background: #2e51a252;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    display: inline-block;
+    line-height: 32px;
+    color: #2e51a2;
+}
+
+.border-top-blue
+{
+	border-top: 4px solid #2e51a2;
+}
