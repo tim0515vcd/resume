@@ -47,7 +47,7 @@
     <div class="mt-4 shadow p-4 bg-white rounded border-top-blue">
       <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
       <div class="col-md-12 px-0">
-        <h1 class="display-4 font-italic text-center">PORTFOLIO</h1>
+        <h1 class="font-italic text-center">PORTFOLIO</h1>
       </div>
     </div>
     <div class="card-deck">
@@ -89,16 +89,33 @@
         <div class="card-body">
           <h5 class="card-title font-weight-bold">DiscordBot聊天機器人</h5>
           <p class="card-text">
-            <p><span class="font-weight-bold">類型：</span>個人作品，獨立開發</p>
+            <p><span class="font-weight-bold">類型：</span>個人作品，獨立開發，持續開發中</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-            1.投票機器人，可以多選投票以及是非投票<br>
-            2.利用爬蟲爬取OPGG網站中英雄聯盟(LOL)的英雄對位勝率以及當季強勢英雄<br>
-            3.聊天機器人，針對部分日常用語會回覆訊息，同時也會判斷使用者ID<br>
-            </p>
+              <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>投票機器人，可以是非投票以及多選投票<br>
+                        是非投票指令：//poll,問題<br>
+                        多選投票指令：//vote,選項1,選項2,...選項10</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>OPGG網站中英雄聯盟(LOL)的英雄對位勝率以及當季強勢英雄<br>
+                        英雄對位勝率指令：//opgg 英雄名 路線位置<br>
+                        當季強勢英雄指令：//topgg t1 or //topgg t2，分別為T1英雄及T2英雄</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>聊天機器人，針對部分日常用語會回覆訊息，同時也會判斷使用者ID</td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
-
-           
+            <p class="text-justify">
+              以逗號判斷選項及問題，使用loop執行並添加對應數量的表情符號；以空格判斷英雄名、路線位置、t1以及t2，分別使用PyQuery及BeautifulSoup進行OPGG網站的爬蟲抓取需要的資料，再使用Pandas進行資料整理，最後使用Discord.py的語法美化資料外觀並送出Message。<br>
+              聊天機器人語言庫目前使用dict新增，屬於手動新增，未來將嘗試連接雲端DB將語言庫資料存寫入，並且新增機器人學習功能。
+            </p>
           </p>
         </div>
         <div class="card-footer">
@@ -107,7 +124,7 @@
             <span class="badge badge-pill badge-dark">Python Pandas</span>
             <span class="badge badge-pill badge-dark">Python BeautifulSoup</span>
             <span class="badge badge-pill badge-dark">Python PyQuery</span>
-            <span class="badge badge-pill badge-primary">Discord</span>
+            <span class="badge badge-pill badge-primary">Discord.py</span>
           </small>
         </div>
       </div>
@@ -118,6 +135,7 @@
             <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -128,6 +146,9 @@
             </div>
             <div class="carousel-item">
               <img src="images/django/editfrom2.PNG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/django/admin.PNG" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -142,13 +163,31 @@
         <div class="card-body">
           <h5 class="card-title font-weight-bold">表單查詢/修改網站</h5>
           <p class="card-text">
-            <p><span class="font-weight-bold">類型：</span>公司專案，獨立開發</p>
+            <p><span class="font-weight-bold">類型：</span>公司專案，獨立開發，持續開發中</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-            1.登入成功的User可以利用申請人或表單編號查詢欲修改/查詢的表單
-            </p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>登入功能</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>利用申請人或表單編號查詢表單</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>User可以查看表單以及修改表單</td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>後臺管理系統，能夠編輯User權限、帳號、所有表單資料的增刪改</td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
-            利用Python Django框架連接DB取得連User帳號密碼以及原表單系統資料，並串接前端網站，前端使用Bootstrap4框架架設。
+            利用Python Django框架連接DB取得User帳號密碼以及原表單系統資料，並串接前端網站，前端使用Bootstrap4框架架設。<br>
+            目前正嘗試將資料連接公司AD網域之User資料，若完成，將來此表單修改網站的User帳號密碼就跟AD網域的相同，這樣User不需記憶太多帳密之外也方便未來資訊人員的管理。
           </p>
         </div>
         <div class="card-footer">
@@ -182,17 +221,38 @@
           <p class="card-text">
             <p><span class="font-weight-bold">類型：</span>公司專案，獨立開發</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-              1.以DOS視窗為介面，抓取台灣銀行每日匯率<br>
-              2.依日期判斷一般匯率或三旬匯率，每月的5、15、25日除了要寫入一般匯率也要寫入三旬匯率<br>
-              3.今日抓取的一般匯率將寫入下一個工作日，三旬抓取的資料除了寫入下一個工作日之外，也分別將寫入11、21、隔月1日(即便是假日也寫入)<br>
-              4.搭配Windows工作排程器排定每日固定時間抓取匯率資料<br>
-              5.搭配DB中的行事曆以判斷假日或平日，假日則自動關閉程式;平日則將資料寫入DB<br>
-              6.若為週五，一般及三旬匯率將自動寫入下一個工作日，若三旬為假日則往前找上一個工作日的匯率寫入DB
-            </p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>以DOS視窗為介面，抓取台灣銀行每日匯率</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>依日期判斷一般匯率或三旬匯率，每月的5、15、25日除了要寫入一般匯率也要寫入三旬匯率</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>今日抓取的一般匯率將寫入下一個工作日，三旬抓取的資料除了寫入下一個工作日之外，也分別將寫入11、21、隔月1日(即便是假日也寫入)</td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>搭配Windows工作排程器排定每日固定時間抓取匯率資料</td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>搭配DB中的行事曆以判斷假日或平日，假日則自動關閉程式;平日則將資料寫入DB</td>
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>若為週五，一般及三旬匯率將自動寫入下一個工作日，若三旬為假日則往前找上一個工作日的匯率寫入DB</td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
+            <p class="text-justify">
             利用Python爬蟲爬取台灣銀行每日匯率，再利用Pandas擷取需要的國家匯率並整理資料，最後使用pyodbc與DB連線並寫入資料。
-
+            </p>
           </p>
         </div>
         <div class="card-footer">
@@ -239,16 +299,35 @@
           <p class="card-text">
             <p><span class="font-weight-bold">類型：</span>公司專案，獨立開發</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-              1.用Python Tkinter製作介面，Menu視窗可以切換一般匯率或三旬匯率<br>
-              2.輸入欲補登日期即可按預覽按鈕，資料會顯示在下方Textbox區域，確認無誤即可在最下方匯率補登按鈕進行資料寫入<br>
-              3.若DB已有資料會跳出已有資料之通知<br>
-              4.一般匯率無輸入日期之限制，補登日期若是假日，會自動找前一工作日的匯率並寫入補登日期的下一工作日
-              5.三旬匯率僅能輸入1、11或21日，程式會往前找25、5、15日的匯率並寫入DB
-            </p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>用Python Tkinter製作介面，Menu視窗可以切換一般匯率或三旬匯率</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>輸入欲補登日期即可按預覽按鈕，資料會顯示在下方Textbox區域，確認無誤即可在最下方匯率補登按鈕進行資料寫入</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>若DB已有資料會跳出已有資料之通知</td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>一般匯率無輸入日期之限制，補登日期若是假日，會自動找前一工作日的匯率並寫入補登日期的下一工作日</td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>三旬匯率僅能輸入1、11或21日，程式會往前找25、5、15日的匯率並寫入DB</td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
+            <p class="text-justify">
               為應應因為外在因素(停電、server當機...等等)導致每日自動匯率抓取程式失效或漏抓而製作，用Python Tkinter製作介面，讓User方便操做，
               後端一樣是利用Python爬蟲爬取台灣銀行每日匯率，再利用Pandas擷取需要的國家匯率並整理資料，最後使用pyodbc與DB連線並寫入資料。
+            </p>
           </p>
         </div>
         <div class="card-footer">
@@ -292,11 +371,34 @@
           <p class="card-text">
             <p><span class="font-weight-bold">類型：</span>公司專案，獨立開發</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-            
-            </p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
-            
+            <p class="text-justify">
+              
+            </p>
           </p>
         </div>
         <div class="card-footer">
@@ -335,11 +437,34 @@
           <p class="card-text">
             <p><span class="font-weight-bold">類型：</span>公司專案，與一位同事共同開發</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-            
-            </p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
-            
+            <p class="text-justify">
+              
+            </p>
           </p>
         </div>
         <div class="card-footer">
@@ -370,11 +495,34 @@
           <p class="card-text">
             <p><span class="font-weight-bold">類型：</span>公司專案，與一位同事共同開發</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-            
-            </p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
-            
+            <p class="text-justify">
+              
+            </p>
           </p>
         </div>
         <div class="card-footer">
@@ -417,11 +565,34 @@
           <p class="card-text">
             <p><span class="font-weight-bold">類型：</span>獨立開發</p>
             <span class="font-weight-bold">功能：</span><br>
-            <p>
-            
-            </p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             <span class="font-weight-bold">簡述：</span><br>
-            
+            <p class="text-justify">
+              
+            </p>
           </p>
         </div>
         <div class="card-footer">
