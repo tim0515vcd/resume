@@ -28,13 +28,7 @@
             <a class="nav-link" href="#">AUTOBIOGRAPHY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">EXPERIENCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">EDUCATION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SKILLS</a>
+            <a class="nav-link" href="resume.html">RESUME</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
@@ -375,29 +369,21 @@
                 <tbody>
                   <tr>
                     <td>1.</td>
-                    <td></td>
+                    <td>皆使用Dos視窗為介面</td>
                   </tr>
                   <tr>
                     <td>2.</td>
-                    <td></td>
+                    <td>輸入每日備份紀錄是否成功</td>
                   </tr>
                   <tr>
                     <td>3.</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>4.</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>5.</td>
-                    <td></td>
+                    <td>輸入每日機房檢查工作日誌</td>
                   </tr>
                 </tbody>
               </table>
             <span class="font-weight-bold">簡述：</span><br>
             <p class="text-justify">
-              
+              原本這兩個功能需在ERP完成，為提升輸入速度，故利用Dos視窗輸入，再用Pandas整理資料，最後寫入DB。
             </p>
           </p>
         </div>
@@ -433,7 +419,7 @@
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title font-weight-bold">自動寄信</h5>
+          <h5 class="card-title font-weight-bold">自動寄信小程式</h5>
           <p class="card-text">
             <p><span class="font-weight-bold">類型：</span>公司專案，與一位同事共同開發</p>
             <span class="font-weight-bold">功能：</span><br>
@@ -441,29 +427,34 @@
                 <tbody>
                   <tr>
                     <td>1.</td>
-                    <td></td>
+                    <td>使用PyQt5設計介面</td>
                   </tr>
                   <tr>
                     <td>2.</td>
-                    <td></td>
+                    <td>User登入功能</td>
                   </tr>
                   <tr>
                     <td>3.</td>
-                    <td></td>
+                    <td>需匯入信件通知表以及信件資料夾<br>
+                        信件通知表：格式為Excel檔，內容包含收件者(認養人)、Email、認養童案號以及是否願意使用Email寄送欄位，可從公司系統匯出<br>
+                        信件資料夾：內部需有兩個資料夾，分別為電子賀卡以及紙本信件，內容包含認養童給認養人的信件掃描檔並以認養童案號和認養人編號合併命名，需要User人工分類並命名</td>
                   </tr>
                   <tr>
                     <td>4.</td>
-                    <td></td>
+                    <td>按下寄信按鈕後下方TextBox會顯示信件寄出狀況，信件資料夾內，程式會自動分類資料夾內的信件，
+                        分別將電子賀卡以及紙本信件上傳至系統並寄出Email，最後輸出Log檔到信件資料夾內。</td>
                   </tr>
+
                   <tr>
                     <td>5.</td>
-                    <td></td>
+                    <td>User可以藉由Log檔查看是否有信件寄送失敗，進而得知成功與失敗的信件分別有幾件</td>
                   </tr>
                 </tbody>
               </table>
             <span class="font-weight-bold">簡述：</span><br>
             <p class="text-justify">
-              
+              登入、檔案上傳、寄送Email功能皆利用Selenium爬蟲，爬公司內部原有的系統，代替人工完成，信件分類、編號比對、建立資料夾使用OS完成，
+              Log檔使用txt檔輸出。
             </p>
           </p>
         </div>
@@ -499,29 +490,21 @@
                 <tbody>
                   <tr>
                     <td>1.</td>
-                    <td></td>
+                    <td>使用Tkinter設計界面</td>
                   </tr>
                   <tr>
                     <td>2.</td>
-                    <td></td>
+                    <td>登入功能，登入後帳號密碼欄位自動鎖定，防止誤觸</td>
                   </tr>
                   <tr>
                     <td>3.</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>4.</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>5.</td>
-                    <td></td>
+                    <td>自動將個案的資料匯出成Word檔</td>
                   </tr>
                 </tbody>
               </table>
             <span class="font-weight-bold">簡述：</span><br>
             <p class="text-justify">
-              
+              使用Selenium爬蟲爬公司系統內個案資料並寫入Word檔，以提供User工作需要。
             </p>
           </p>
         </div>
