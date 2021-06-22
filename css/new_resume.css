@@ -54,26 +54,73 @@ ul.timeline > li:before {
     border-radius: 0 10px 10px 0;
 }
 
+@keyframes p40{
+    0%{
+      width:0;
+  }
+  40%{
+      width:40%;
+  }
+}
+
+@keyframes p50{
+    0%{
+      width:0;
+  }
+  50%{
+      width:50%;
+  }
+}
+
+@keyframes p60{
+    0%{
+      width:0;
+  }
+  60%{
+      width:60%;
+  }
+}
+@keyframes p70{
+    0%{
+      width:0;
+  }
+  70%{
+      width:70%;
+  }
+}
+@keyframes p80{
+    0%{
+      width:0;
+  }
+  80%{
+      width:80%;
+  }
+}
 .value{
   height: 100%;
   background-color: #2e51a2;
-  animation: grow 1.5s ease-out forwards;
-  transform-origin: left;
+  animation-fill-mode:forwards;
+  animation-duration:2s;
 }
 .value.p40{
   width: 40%;
+  animation-name: p40;
 }
 .value.p50{
   width: 50%;
+  animation-name: p50;
 }
 .value.p60{
   width: 60%;
+  animation-name: p60;
 }
 .value.p70{
   width: 70%;
+  animation-name: p70;
 }
 .value.p80{
   width: 80%;
+  animation-name: p80;
 }
 
 .border-top-resume{
